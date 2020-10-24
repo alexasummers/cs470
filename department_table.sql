@@ -1,6 +1,6 @@
 DROP TABLE IF EXISTS Department;
 
-CREATE TABLE IF NOT EXISTS department (
+CREATE TABLE department (
     departmentID INT(5) NOT NULL,
     Name VARCHAR(255) NOT NULL,
     PRIMARY KEY (departmentID)
