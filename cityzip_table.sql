@@ -1,5 +1,3 @@
-DROP TABLE IF EXISTS CityStateZip;
-
 CREATE TABLE CityStateZip
 (Zip INT (6) NOT NULL,
 City VARCHAR (30) NOT NULL,

@@ -1,5 +1,3 @@
-DROP TABLE IF EXISTS patientinformation;
-
 CREATE TABLE PatientInformation
 (Last_Name varchar (255) NOT NULL,
 First_Name varchar (255) NOT NULL,

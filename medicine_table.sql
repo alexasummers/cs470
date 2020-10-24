@@ -1,5 +1,3 @@
--- DROP TABLE IF EXISTS Medicine;
-
 CREATE TABLE IF NOT EXISTS Medicine( 
  drugID int(5) NOT NULL AUTO_INCREMENT,
  Name varchar(100) NOT NULL,

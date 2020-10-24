@@ -1,5 +1,3 @@
-DROP TABLE IF EXISTS Department;
-
 CREATE TABLE department (
     departmentID INT(5) NOT NULL,
     Name VARCHAR(255) NOT NULL,
