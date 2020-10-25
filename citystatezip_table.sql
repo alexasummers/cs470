@@ -1,7 +1,8 @@
 CREATE TABLE CityStateZip
 (Zip INT (6) NOT NULL,
 City VARCHAR (30) NOT NULL,
-State VARCHAR (30) NOT NULL);
+State VARCHAR (30) NOT NULL,
+PRIMARY KEY (Zip)) ENGINE=INNODB;
 
 INSERT INTO CityStateZip (Zip, City, State) VALUE
 (12001, "New Haven", "WA"),

@@ -2,7 +2,7 @@ CREATE TABLE department (
     departmentID INT(5) NOT NULL,
     Name VARCHAR(255) NOT NULL,
     PRIMARY KEY (departmentID)
-);
+)ENGINE=INNODB;
 
 INSERT INTO department (Name, departmentID)
 VALUES ('A&E',010001),
