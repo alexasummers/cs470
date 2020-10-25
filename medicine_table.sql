@@ -1,4 +1,4 @@
-CREATE TABLE IF NOT EXISTS Medicine( 
+CREATE TABLE Medicine( 
  drugID int(5) NOT NULL AUTO_INCREMENT,
  Name varchar(100) NOT NULL,
  Interactions varchar(100) NOT NULL,
