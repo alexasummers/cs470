@@ -10,7 +10,8 @@
 -- 	REFERENCES medicine(DrugID)
 --     ON DELETE RESTRICT) ENGINE=INNODB;
 
-    SELECT patientID, drugID
-    FROM patientdrugjunction
+    SELECT client.ClientID, medicine.drugID
+    FROM client
+    INNER JOIN medicine ON client.DrugID=medicine.drugID
     
     
