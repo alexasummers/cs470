@@ -50,5 +50,8 @@
 -- SET Department_ID = "010019"
 -- WHERE Department_ID = "010023";
 
+-- ALTER TABLE staff
+-- ADD FOREIGN KEY (Department_ID) REFERENCES department(departmentID);
+
 SELECT *
 FROM staff
