@@ -37,109 +37,113 @@
 -- ('1023', 8, '432', 'Abnormal'),
 -- ('1024', 36, '216', 'Abnormal');
 
-UPDATE client
-SET StaffID = "1111"
-WHERE StaffID = "1000";
+-- UPDATE client
+-- SET StaffID = "1111"
+-- WHERE StaffID = "1000";
 
-UPDATE client
-SET StaffID = "1111"
-WHERE StaffID = "1003";
+-- UPDATE client
+-- SET StaffID = "1111"
+-- WHERE StaffID = "1003";
 
-UPDATE client
-SET StaffID = "1111"
-WHERE StaffID = "1009";
+-- UPDATE client
+-- SET StaffID = "1111"
+-- WHERE StaffID = "1009";
 
-UPDATE client
-SET StaffID = "1111"
-WHERE StaffID = "1010";
+-- UPDATE client
+-- SET StaffID = "1111"
+-- WHERE StaffID = "1010";
 
-UPDATE client
-SET StaffID = "1111"
-WHERE StaffID = "1017";
+-- UPDATE client
+-- SET StaffID = "1111"
+-- WHERE StaffID = "1017";
 
-UPDATE client
-SET StaffID = "2222"
-WHERE StaffID = "1001";
+-- UPDATE client
+-- SET StaffID = "2222"
+-- WHERE StaffID = "1001";
 
-UPDATE client
-SET StaffID = "2222"
-WHERE StaffID = "1002";
+-- UPDATE client
+-- SET StaffID = "2222"
+-- WHERE StaffID = "1002";
 
-UPDATE client
-SET StaffID = "2222"
-WHERE StaffID = "1011";
+-- UPDATE client
+-- SET StaffID = "2222"
+-- WHERE StaffID = "1011";
 
-UPDATE client
-SET StaffID = "2222"
-WHERE StaffID = "1013";
+-- UPDATE client
+-- SET StaffID = "2222"
+-- WHERE StaffID = "1013";
 
-UPDATE client
-SET StaffID = "2222"
-WHERE StaffID = "1024";
+-- UPDATE client
+-- SET StaffID = "2222"
+-- WHERE StaffID = "1024";
 
-UPDATE client
-SET StaffID = "3333"
-WHERE StaffID = "1004";
+-- UPDATE client
+-- SET StaffID = "3333"
+-- WHERE StaffID = "1004";
 
-UPDATE client
-SET StaffID = "3333"
-WHERE StaffID = "1018";
+-- UPDATE client
+-- SET StaffID = "3333"
+-- WHERE StaffID = "1018";
 
-UPDATE client
-SET StaffID = "3333"
-WHERE StaffID = "1020";
+-- UPDATE client
+-- SET StaffID = "3333"
+-- WHERE StaffID = "1020";
 
-UPDATE client
-SET StaffID = "3333"
-WHERE StaffID = "1022";
+-- UPDATE client
+-- SET StaffID = "3333"
+-- WHERE StaffID = "1022";
 
-UPDATE client
-SET StaffID = "3333"
-WHERE StaffID = "1005";
+-- UPDATE client
+-- SET StaffID = "3333"
+-- WHERE StaffID = "1005";
 
-UPDATE client
-SET StaffID = "3333"
-WHERE StaffID = "1023";
+-- UPDATE client
+-- SET StaffID = "3333"
+-- WHERE StaffID = "1023";
 
-UPDATE client
-SET StaffID = "4444"
-WHERE StaffID = "1007";
+-- UPDATE client
+-- SET StaffID = "4444"
+-- WHERE StaffID = "1007";
 
-UPDATE client
-SET StaffID = "4444"
-WHERE StaffID = "1012";
+-- UPDATE client
+-- SET StaffID = "4444"
+-- WHERE StaffID = "1012";
 
-UPDATE client
-SET StaffID = "4444"
-WHERE StaffID = "1016";
+-- UPDATE client
+-- SET StaffID = "4444"
+-- WHERE StaffID = "1016";
 
-UPDATE client
-SET StaffID = "4444"
-WHERE StaffID = "1018";
+-- UPDATE client
+-- SET StaffID = "4444"
+-- WHERE StaffID = "1018";
 
-UPDATE client
-SET StaffID = "4444"
-WHERE StaffID = "1021";
+-- UPDATE client
+-- SET StaffID = "4444"
+-- WHERE StaffID = "1021";
 
-UPDATE client
-SET StaffID = "5555"
-WHERE StaffID = "1006";
+-- UPDATE client
+-- SET StaffID = "5555"
+-- WHERE StaffID = "1006";
 
-UPDATE client
-SET StaffID = "5555"
-WHERE StaffID = "1008";
+-- UPDATE client
+-- SET StaffID = "5555"
+-- WHERE StaffID = "1008";
 
-UPDATE client
-SET StaffID = "5555"
-WHERE StaffID = "1014";
+-- UPDATE client
+-- SET StaffID = "5555"
+-- WHERE StaffID = "1014";
 
-UPDATE client
-SET StaffID = "5555"
-WHERE StaffID = "1015";
+-- UPDATE client
+-- SET StaffID = "5555"
+-- WHERE StaffID = "1015";
 
-UPDATE client
-SET StaffID = "5555"
-WHERE StaffID = "1019";
+-- UPDATE client
+-- SET StaffID = "5555"
+-- WHERE StaffID = "1019";
+
+
+-- ALTER TABLE Client
+-- ADD FOREIGN KEY (StaffID) REFERENCES staff(Staff_ID);
 
 SELECT *
 FROM client
