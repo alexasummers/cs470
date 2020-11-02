@@ -144,3 +144,6 @@
 
 -- ALTER TABLE Client
 -- ADD FOREIGN KEY (StaffID) REFERENCES staff(Staff_ID);
+
+SELECT *
+FROM Client;
