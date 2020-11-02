@@ -42,3 +42,8 @@ body {
   tr:nth-child(even) {
     background-color: #dddddd;
   }
+
+  img.sitemap{
+    width: 50%;
+    height: 80%;
+  }
