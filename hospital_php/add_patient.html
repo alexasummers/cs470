@@ -1,18 +1,25 @@
 <html>
     <head>
-        <title>Add Student</title>
+        <title>Add Patient</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <form method="post" action="add_patient.php">
             <table>
-                <tr><td>First Name:</td><td><input type="text" name="fname"></td></tr>
-                <tr><td>Last Name:</td><td><input type="text" name="lname"></td></tr>
-                <tr><td>Gender:</td><td><input type="radio" name="gender" value="male">Male
-                        <input type="radio" name="gender" value="female">Female
-                        <input type="radio" name="gender" value="other">Other</td></tr>
-                <tr><td>Date Of Birth:</td><td><input type="text" name="date"> Format: "MM/DD/YYYY"</td> </tr>
+                <tr><td>Last Name:</td><td><input type="text" name="Last_name"></td></tr>
+                <tr><td>First Name:</td><td><input type="text" name="First_name"></td></tr>
+                <tr><td>House Number:</td><td><input type="text" name="HouseNum"></td></tr>
+                <tr><td>Street:</td><td><input type="text" name="Street"></td></tr>
+                <tr><td>Apartment Number:</td><td><input type="text" name="Apartment"></td></tr>
+                <tr><td>Zip Code:</td><td><input type="text" name="Zip"></td></tr>
+                <tr><td>Phone:</td><td><input type="text" name="Phone"></td></tr>
+                <tr><td>ICE First Name:</td><td><input type="text" name="ICE_Fname"></td></tr>
+                <tr><td>ICE Last Name:</td><td><input type="text" name="ICE_Lname"></td></tr>
+                <tr><td>ICE Relation:</td><td><input type="text" name="ICE_relation"></td></tr>
+                <tr><td>ICE Number:</td><td><input type="text" name="ICE_number"></td></tr>
+                <tr><td>Patient Information ID:</td><td><input type="text" name="patient_InformationID"></td></tr>
+
                 <tr><td><input type="submit" value="Submit"></td><td></td>
             </table>
         </form>

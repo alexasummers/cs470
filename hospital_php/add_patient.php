@@ -1,29 +1,28 @@
 <?php
 require_once 'connection.php';//include the connection file
 
+$Last_name=isset($_POST['Last_name'])?$_POST['Last_name']:"";
+$First_name=isset($_POST['First_name'])?$_POST['First_name']:"";
+$HouseNum=isset($_POST['HouseNum'])?$_POST['HouseNum']:"";
+$Street=isset($_POST['Street'])?$_POST['Street']:"";
+$Apartment=isset($_POST['Apartment'])?$_POST['Apartment']:"";
+$Zip=isset($_POST['Zip'])?$_POST['Zip']:"";
+$Phone=isset($_POST['Phone'])?$_POST['Phone']:"";
+$ICE_Fname=isset($_POST['ICE_Fname'])?$_POST['ICE_Fname']:"";
+$ICE_Lname=isset($_POST['ICE_Lname'])?$_POST['ICE_Lname']:"";
+$ICE_relation=isset($_POST['ICE_relation'])?$_POST['ICE_relation']:"";
+$ICE_number=isset($_POST['ICE_number'])?$_POST['ICE_number']:"";
+$patient_InformationID=isset($_POST['patient_InformationID'])?$_POST['patient_InformationID']:"";
 
-/**get the information from the form, save it in variables*/
-$fname=isset($_POST['fname'])?$_POST['fname']:"";
-$lname=isset($_POST['lname'])?$_POST['lname']:"";
-$date=isset($_POST['date'])?date_create_from_format('m/d/Y', $_POST['date']):"";
-$dateOfBirth=date_format($date,"Y-m-d");
-$g=isset($_POST['gender'])?$_POST['gender']:"";
-if ($g == 'male'){
-    $g= 1;}
-elseif($g == 'female'){
-    $g= 2;}
-elseif($g == 'other'){
-    $g= 3;}
 
-/**insert a new record into the student table*/
-$SQL = "INSERT INTO Student(FirstName,LastName,DateOfBirth,Gender) VALUES(";
-$SQL.="'".$fname."', '".$lname."', '".$dateOfBirth."', '".$g."' )";
+$SQL = "INSERT INTO patientinformation(Last_name,First_name,HouseNum,Street,Apartment,Zip,Phone,ICE_Fname,ICE_Lname,ICE_relation,ICE_number,patient_InformationID) VALUES(";
+$SQL.="'".$Last_name."', '".$First_name."', '".$HouseNum."', '".$Street."', '".$Apartment."', '".$Zip."', '".$Phone."', '".$ICE_Fname."', '".$ICE_Lname."', '".$ICE_relation."', '".$ICE_number."', '".$patient_InformationID."' )";
 $result = mysqli_query($connection,$SQL);
 
 if (!$result) //if the query fails
     die("Database access failed: " . mysqli_error($connection));
 
 //otherwise
-echo "a new student has been added successfully";
+echo "a new patient has been added successfully";
 
 ?>
