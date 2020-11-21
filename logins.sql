@@ -6,9 +6,9 @@ CREATE TABLE login (
 )ENGINE=INNODB;
 
 INSERT INTO login (login, password) VALUES
-(MD5('admin'), MD5('admin')),
-(MD5('doctor'), MD5('doctor')),
-(MD5('nurse'), MD5('nurse'));
+(SHA1('admin'), MD5('admin')),
+(SHA1('doctor'), MD5('doctor')),
+(SHA1('nurse'), MD5('nurse'));
 
 SELECT*
 FROM LOGIN
