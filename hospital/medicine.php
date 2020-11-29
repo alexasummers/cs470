@@ -1,5 +1,9 @@
-<html>
+<?php
+include 'show_medicine.php';
+?>
 
+<html>
+    
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title> Group 2 Hospital Mockup</title>
@@ -10,16 +14,16 @@
 
     <div class="topnav">
         <a class="active" href="homepage.html">Home</a>
-        <a href ="patientInformation.php">Patient Information</a>
-        <a href="medicine.php">Medicine</a>
+        <a href="patientInformation.php">Patient Information</a>
+        <a href="medicine.html">Medicine</a>
         <a href="staff.html">Staff</a>
         <a href="sitemap.html">Sitemap</a>
     </div>
 
     <div style="padding-left:16px">
-        <h2>470 Group 2 User Interface Mockup</h2>
-        <h4>Created by Alexa Summers, Purva Patel, Kari Jessip and Thomas Tran.</h4>
-        <p>Navigate with the menu bar above.</p>
+        <h2>Drug Information</h2>
+        <?php echo $html ?>
+    
     </div>
 
 </body>
