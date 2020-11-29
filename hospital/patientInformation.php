@@ -12,12 +12,13 @@ include 'show_patient.php';
 
 <body>
 
-    <div class="topnav">
+<div class="topnav">
         <a class="active" href="homepage.html">Home</a>
         <a href="patientInformation.php">Patient Information</a>
         <a href="medicine.php">Medicine</a>
         <a href="staff.php">Staff</a>
         <a href="sitemap.html">Sitemap</a>
+        <a href="new_medicine.php">Create New Medicine</a>
     </div>
 
     <div style="padding-left:16px">
