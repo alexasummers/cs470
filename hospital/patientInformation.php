@@ -14,7 +14,7 @@ include 'show_patient.php';
 
     <div class="topnav">
         <a class="active" href="homepage.html">Home</a>
-        <a href="patientInformation.html">Patient Information</a>
+        <a href="patientInformation.php">Patient Information</a>
         <a href="medicine.html">Medicine</a>
         <a href="staff.html">Staff</a>
         <a href="sitemap.html">Sitemap</a>
