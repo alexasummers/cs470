@@ -1,5 +1,5 @@
 <?php
-include 'show_patient.php';
+include 'show_staff.php';
 ?>
 
 <html>
@@ -16,14 +16,14 @@ include 'show_patient.php';
         <a class="active" href="homepage.html">Home</a>
         <a href="patientInformation.php">Patient Information</a>
         <a href="medicine.php">Medicine</a>
-        <a href="staff.html">Staff</a>
+        <a href="staff.php">Staff</a>
         <a href="sitemap.html">Sitemap</a>
     </div>
 
     <div style="padding-left:16px">
-        <h2>Patient Information</h2>
-
+        <h2>Staff Information</h2>
         <?php echo $html ?>
+    
     </div>
 
 </body>

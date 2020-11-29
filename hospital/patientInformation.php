@@ -16,7 +16,7 @@ include 'show_patient.php';
         <a class="active" href="homepage.html">Home</a>
         <a href="patientInformation.php">Patient Information</a>
         <a href="medicine.php">Medicine</a>
-        <a href="staff.html">Staff</a>
+        <a href="staff.php">Staff</a>
         <a href="sitemap.html">Sitemap</a>
     </div>
 
