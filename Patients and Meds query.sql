@@ -1,7 +1,10 @@
-SELECT ClientID, Last_Name, First_Name, Name, drugID
-FROM Patient
-LEFT JOIN (SELECT ClientID, drugID, Name
+
+SELECT ClientID, drugID, Name
 from Client
 JOIN medicine
-on [Client].DrugID = drug.ID)
+on [Client].DrugID = drug.ID
+as TEMP;
+SELECT ClientID, Last_Name, First_Name, Name, drugID
+FROM Patient
+LEFT JOIN TEMP
 on ClientID = ClientID;
