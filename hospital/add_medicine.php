@@ -12,7 +12,9 @@ $result = mysqli_query($connection,$SQL);
 if (!$result) //if the query fails
     die("Database access failed: " . mysqli_error($connection));
 
-//otherwise
-echo "a new drug has been added successfully";
 
-?>
+
+if($DrugID !=''&& $Name !=''&& $Interactions !='')
+{
+header("Location:record_added_successfully.php");
+}

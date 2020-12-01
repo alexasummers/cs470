@@ -1,7 +1,3 @@
-<?php
-include 'show_medicine.php';
-?>
-
 <html>
     
 <head>
@@ -24,8 +20,8 @@ include 'show_medicine.php';
 
 
     <div style="padding-left:16px">
-        <h2>Drug Information</h2>
-        <?php echo $html ?>
+        <h2>New Record Added Successfully!</h2>
+        <h4>See your new record by navigating to the respective page along the navigation.</h4>
     
     </div>
 

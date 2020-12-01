@@ -1,5 +1,5 @@
 <?php
-include 'show_medicine.php';
+include 'add_patient.php';
 ?>
 
 <html>
@@ -12,7 +12,7 @@ include 'show_medicine.php';
 
 <body>
 
-<div class="topnav">
+    <div class="topnav">
         <a class="active" href="homepage.html">Home</a>
         <a href="patientInformation.php">Patient Information</a>
         <a href="medicine.php">Medicine</a>
@@ -22,10 +22,18 @@ include 'show_medicine.php';
         <a href="new_patient.php">Create New Patient</a>
     </div>
 
-
     <div style="padding-left:16px">
-        <h2>Drug Information</h2>
-        <?php echo $html ?>
+        <h2>Create New Patient</h2>
+        <form method="post" action="add_patient.php">
+        <table>
+                <tr><td>Staff ID:</td><td><input type="int" name="StaffID"></td></tr>
+                <tr><td>Drug ID:</td><td><input type="int" name="DrugID"></td></tr>
+                <tr><td>Length of Stay:</td><td><input type="int" name="Length_of_stay"></td></tr>
+                <tr><td>Vitals:</td><td><input type="varchar" name="Vitals"></td></tr>
+               
+                <tr><td><input type="submit" value="Submit"></td><td></td>
+            </table>
+        </form>
     
     </div>
 

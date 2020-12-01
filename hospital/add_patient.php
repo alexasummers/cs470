@@ -3,7 +3,7 @@ require_once 'connection.php';//include the connection file
 
 $ClientID=isset($_POST['ClientID'])?$_POST['ClientID']:"";
 $StaffID=isset($_POST['StaffID'])?$_POST['StaffID']:"";
-// $DrugID=isset($_POST['DrugID'])?$_POST['DrugID']:"";
+$DrugID=isset($_POST['DrugID'])?$_POST['DrugID']:"";
 $Length_of_stay=isset($_POST['Length_of_stay'])?$_POST['Length_of_stay']:"";
 $Vitals=isset($_POST['Vitals'])?$_POST['Vitals']:"";
 
@@ -14,7 +14,9 @@ $result = mysqli_query($connection,$SQL);
 if (!$result) //if the query fails
     die("Database access failed: " . mysqli_error($connection));
 
-//otherwise
-echo "a new patient has been added successfully";
+    if($ClientID !=''&& $StaffID !=''&& $DrugID !='' && $Length_of_stay !=''&& $Vitals !='')
+    {
+    header("Location:record_added_successfully.php");
+    }
 
 ?>

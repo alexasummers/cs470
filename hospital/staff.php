@@ -19,7 +19,9 @@ include 'show_staff.php';
         <a href="staff.php">Staff</a>
         <a href="sitemap.html">Sitemap</a>
         <a href="new_medicine.php">Create New Medicine</a>
+        <a href="new_patient.php">Create New Patient</a>
     </div>
+
 
     <div style="padding-left:16px">
         <h2>Staff Information</h2>
