@@ -68,7 +68,7 @@ CREATE TABLE `client` (
 
 LOCK TABLES `client` WRITE;
 /*!40000 ALTER TABLE `client` DISABLE KEYS */;
-INSERT INTO `client` VALUES (1,1111,38,168,'Normal'),(2,2222,23,120,'Normal'),(3,2222,12,312,'Abnormal'),(4,1111,1,48,'Normal'),(5,3333,3,7,'Normal'),(6,3333,14,192,'Abnormal'),(7,5555,21,192,'Abnormal'),(8,4444,1,5,'Normal'),(9,5555,32,72,'Abnormal'),(10,1111,21,216,'Abnormal'),(11,1111,11,15,'Normal'),(12,2222,7,48,'Normal'),(13,4444,32,504,'Abnormal'),(14,2222,1,48,'Normal'),(15,5555,5,7,'Normal'),(16,5555,21,24,'Normal'),(17,4444,2,312,'Abnormal'),(18,1111,40,192,'Abnormal'),(19,3333,28,360,'Abnormal'),(20,5555,30,120,'Abnormal'),(21,3333,36,192,'Abnormal'),(22,4444,28,96,'Normal'),(23,3333,19,48,'Normal'),(24,3333,8,432,'Abnormal'),(25,2222,36,216,'Abnormal');
+INSERT INTO `client` VALUES (1,1111,38,168,'blah blah'),(2,2222,23,120,'Normal'),(3,2222,12,312,'Abnormal'),(4,1111,1,48,'Normal'),(5,3333,3,7,'Normal'),(6,3333,14,192,'Abnormal'),(7,5555,21,192,'Abnormal'),(8,4444,1,5,'Normal'),(9,5555,32,72,'Abnormal'),(10,1111,21,216,'Abnormal'),(11,1111,11,15,'Normal'),(12,2222,7,48,'Normal'),(13,4444,32,504,'Abnormal'),(14,2222,1,48,'Normal'),(15,5555,5,7,'Normal'),(16,5555,21,24,'Normal'),(17,4444,2,312,'Abnormal'),(18,1111,40,192,'Abnormal'),(19,3333,28,360,'Abnormal'),(20,5555,30,120,'Abnormal'),(21,3333,36,192,'Abnormal'),(22,4444,28,96,'Normal'),(23,3333,19,48,'Normal'),(24,3333,8,432,'Abnormal'),(25,2222,36,216,'Abnormal');
 /*!40000 ALTER TABLE `client` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -255,13 +255,14 @@ DELIMITER ;
 /*!50003 SET sql_mode              = 'NO_AUTO_VALUE_ON_ZERO' */ ;
 DELIMITER ;;
 CREATE DEFINER=`root`@`localhost` PROCEDURE `update_vitals`(
-	IN newVitals VARCHAR(10)
+	IN newVitals VARCHAR(10),
+    IN cID int
 )
 BEGIN
 
 UPDATE test.client
 	SET Vitals = newVitals
-    WHERE ClientID = 1;
+    WHERE ClientID = cID;
     
 END ;;
 DELIMITER ;
@@ -279,4 +280,4 @@ DELIMITER ;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-12-02  5:59:21
+-- Dump completed on 2020-12-02 14:24:17
