@@ -1,6 +1,8 @@
--- MySQL dump 10.13  Distrib 8.0.22, for Win64 (x86_64)
+CREATE DATABASE  IF NOT EXISTS `test` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+USE `test`;
+-- MySQL dump 10.13  Distrib 8.0.21, for Win64 (x86_64)
 --
--- Host: 127.0.0.1    Database: test
+-- Host: localhost    Database: test
 -- ------------------------------------------------------
 -- Server version	8.0.21
 
@@ -210,6 +212,63 @@ LOCK TABLES `staff` WRITE;
 INSERT INTO `staff` VALUES (1111,'Jones','Susan',10005,'PhD'),(1112,'Moore','Jennifer',10007,'RN'),(1121,'Green','Stephanie',10018,'MD'),(2222,'Smith','Thomas',10011,'MD'),(2223,'Clark','William',10008,'APRN'),(2232,'Adams','Laura',10020,'APRN'),(3333,'Wells','Mindy',10015,'DO'),(3334,'White','David',10009,'PhD'),(3343,'Baker','Ryan',10021,'PA'),(4444,'Wilson','George',10017,'APRN'),(4445,'Perez','Sarah',10010,'DO'),(4454,'Campbell','Jonathan',10022,'DO'),(5555,'Bartlett','Diane',1005,'RN'),(5556,'Lewis','Ronald',10012,'RN'),(5565,'Davidson','James',10019,'RN'),(6666,'Brown','John',10002,'MD'),(6667,'Young','Carol',10013,'RN'),(7777,'Garcia','Robert',10003,'MD'),(7778,'King','Melissa',10014,'DO'),(8888,'Anderson','Mary',10004,'DO'),(8889,'Hill','Amy',10016,'PA'),(9999,'Taylor','Patricia',10006,'PA');
 /*!40000 ALTER TABLE `staff` ENABLE KEYS */;
 UNLOCK TABLES;
+
+--
+-- Dumping events for database 'test'
+--
+
+--
+-- Dumping routines for database 'test'
+--
+/*!50003 DROP PROCEDURE IF EXISTS `get_client_information` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'NO_AUTO_VALUE_ON_ZERO' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `get_client_information`(
+	IN cID int
+)
+BEGIN
+
+SELECT ClientID, StaffID, DrugID, Length_of_stay, Vitals FROM client
+	WHERE ClientID = cID;
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `update_vitals` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'NO_AUTO_VALUE_ON_ZERO' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `update_vitals`(
+	IN newVitals VARCHAR(10)
+)
+BEGIN
+
+UPDATE test.client
+	SET Vitals = newVitals
+    WHERE ClientID = 1;
+    
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -220,4 +279,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-11-29 16:47:14
+-- Dump completed on 2020-12-02  5:59:21
