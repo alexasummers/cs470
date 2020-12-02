@@ -18,7 +18,7 @@ include 'add_medicine.php';
         <a href="medicine.php">Medicine</a>
         <a href="staff.php">Staff</a>
         <a href="sitemap.html">Sitemap</a>
-        <a href="new_patient.php">Create New Medicine</a>
+        <a href="new_medicine.php">Create New Medicine</a>
         <a href="new_patient.php">Create New Patient</a>
     </div>
 
