@@ -1,0 +1,11 @@
+CREATE TABLE ClientStaffJunction
+(junctionID int AUTO_INCREMENT,
+ClientID int,
+StaffID int,
+PRIMARY KEY(junctionID),
+FOREIGN KEY(ClientID)
+REFERENCES client(ClientID)
+ON DELETE RESTRICT,
+FOREIGN KEY(StaffID)
+REFERENCES staff(Staff_ID)
+ON DELETE RESTRICT) ENGINE=INNODB;

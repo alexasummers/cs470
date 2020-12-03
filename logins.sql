@@ -9,15 +9,3 @@ INSERT INTO login (login, password) VALUES
 (('admin'), ('$2y$10$4IL1ixYfu/Ok7X3V843tAeKInfFI90HdALiWBnBxs.mhc8RK3N8X.')),
 (('doctor'), ('$2y$10$DQwDPL8WJ8UqbueeO8.WBOGnr7p/oWPZDvvwp1KxzKJ8nI626WBdK')),
 (('nurse'), ('$2y$10$PXugIto6/qEgtkx37Fnj4.BwOC6Tx.cOksHZP83BcYdLBpTe9yYYi'));
-
--- INSERT INTO login (login, password) VALUES
--- ('admin', 'admin'),
--- ('doctor', 'doctor'),
--- ('nurse', 'nurse');
-
-SELECT *
-FROM LOGIN
-
--- ALTER TABLE Login CHANGE login id varchar (255);
-
--- ALTER TABLE Login CHANGE password Password varchar (255);
