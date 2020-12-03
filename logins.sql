@@ -6,9 +6,9 @@ CREATE TABLE login (
 )ENGINE=INNODB;
 
 INSERT INTO login (login, password) VALUES
-(('admin'), MD5('admin')),
-(('doctor'), MD5('doctor')),
-(('nurse'), MD5('nurse'));
+(('admin'), ('$2y$10$4IL1ixYfu/Ok7X3V843tAeKInfFI90HdALiWBnBxs.mhc8RK3N8X.')),
+(('doctor'), ('$2y$10$DQwDPL8WJ8UqbueeO8.WBOGnr7p/oWPZDvvwp1KxzKJ8nI626WBdK')),
+(('nurse'), ('$2y$10$PXugIto6/qEgtkx37Fnj4.BwOC6Tx.cOksHZP83BcYdLBpTe9yYYi'));
 
 -- INSERT INTO login (login, password) VALUES
 -- ('admin', 'admin'),
