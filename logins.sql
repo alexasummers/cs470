@@ -1,8 +1,10 @@
 DROP TABLE IF EXISTS login;
 
 CREATE TABLE login (
+	loginID INT(5) AUTO_INCREMENT,
     login varchar(255) NOT NULL,
-    password varchar(255) NOT NULL
+    password varchar(255) NOT NULL,
+    PRIMARY KEY (loginID)
 )ENGINE=INNODB;
 
 INSERT INTO login (login, password) VALUES
@@ -12,3 +14,6 @@ INSERT INTO login (login, password) VALUES
 (('practicioner'), ('$2y$10$cLoMP.VKAmm8eogKAYYOeurNWK9uRnsIF971e9wD6Kzmay13FI46q')),
 (('examiner'), ('$2y$10$pyK07srlBtx07vjG8hh.C.euOjPEf07Pn2fjObkqvDHXVtip/FJ5q')),
 (('surgeon'), ('$2y$10$LjQ.RpV4hv9D094KC86YZOFYgT6DF2JgQcd/uOA1Q/1OdXEWx229S'));
+
+SELECT *
+FROM login;
