@@ -1,3 +1,4 @@
+
 -- DROP TABLE IF EXISTS Staff;
 
 -- CREATE TABLE `Staff` (
@@ -68,6 +69,40 @@ WHERE Department_ID = "010023";
 
 ALTER TABLE staff
 ADD FOREIGN KEY (Department_ID) REFERENCES department(departmentID);
+
+
+ALTER TABLE staff ADD COLUMN 
+loginID int FIRST;
+
+ALTER TABLE staff
+ADD FOREIGN KEY (loginID) REFERENCES login(loginID);
+
+UPDATE staff
+SET loginID = "2"
+WHERE Credentials = "PhD" "MD" "DO";
+
+UPDATE staff
+SET loginID = "2"
+WHERE Credentials = "MD";
+
+UPDATE staff
+SET loginID = "2"
+WHERE Credentials = "DO";
+
+UPDATE staff
+SET loginID = "3"
+WHERE Credentials = "RN";
+
+UPDATE staff
+SET loginID = "4"
+WHERE Credentials = "APRN";
+
+UPDATE staff
+SET loginID = "7"
+WHERE Credentials = "PA";
+
+SELECT *
+FROM login;
 
 SELECT *
 FROM staff
