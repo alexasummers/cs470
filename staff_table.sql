@@ -64,8 +64,8 @@ SET Department_ID = "10017"
 WHERE Department_ID = "010017";
 
 UPDATE staff
-SET Department_ID = "10019"
-WHERE Department_ID = "010019";
+SET Department_ID = "10005"
+WHERE Department_ID = "1005";
 
 ALTER TABLE staff
 ADD FOREIGN KEY (Department_ID) REFERENCES department(departmentID);
@@ -102,7 +102,7 @@ SET loginID = "7"
 WHERE Credentials = "PA";
 
 SELECT *
-FROM login;
+FROM staff;
 
 SELECT *
 FROM department
