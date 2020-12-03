@@ -8,4 +8,7 @@ CREATE TABLE login (
 INSERT INTO login (login, password) VALUES
 (('admin'), ('$2y$10$4IL1ixYfu/Ok7X3V843tAeKInfFI90HdALiWBnBxs.mhc8RK3N8X.')),
 (('doctor'), ('$2y$10$DQwDPL8WJ8UqbueeO8.WBOGnr7p/oWPZDvvwp1KxzKJ8nI626WBdK')),
-(('nurse'), ('$2y$10$PXugIto6/qEgtkx37Fnj4.BwOC6Tx.cOksHZP83BcYdLBpTe9yYYi'));
+(('nurse'), ('$2y$10$PXugIto6/qEgtkx37Fnj4.BwOC6Tx.cOksHZP83BcYdLBpTe9yYYi')),
+(('practicioner'), ('$2y$10$cLoMP.VKAmm8eogKAYYOeurNWK9uRnsIF971e9wD6Kzmay13FI46q')),
+(('examiner'), ('$2y$10$pyK07srlBtx07vjG8hh.C.euOjPEf07Pn2fjObkqvDHXVtip/FJ5q')),
+(('surgeon'), ('$2y$10$LjQ.RpV4hv9D094KC86YZOFYgT6DF2JgQcd/uOA1Q/1OdXEWx229S'));
