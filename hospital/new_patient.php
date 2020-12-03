@@ -1,6 +1,4 @@
-<?php
-include 'add_patient.php';
-?>
+
 
 <html>
     
@@ -20,6 +18,7 @@ include 'add_patient.php';
         <a href="sitemap.html">Sitemap</a>
         <a href="new_medicine.php">Create New Medicine</a>
         <a href="new_patient.php">Create New Patient</a>
+        <a href="login(open_first).html">Logout</a>
     </div>
 
     <div style="padding-left:16px">

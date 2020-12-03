@@ -14,9 +14,7 @@ $result = mysqli_query($connection,$SQL);
 if (!$result) //if the query fails
     die("Database access failed: " . mysqli_error($connection));
 
-    if($ClientID !=''&& $StaffID !=''&& $DrugID !='' && $Length_of_stay !=''&& $Vitals !='')
+    if($StaffID !=''&& $DrugID !='' && $Length_of_stay !=''&& $Vitals !='')
     {
     header("Location:record_added_successfully.php");
     }
-
-?>
