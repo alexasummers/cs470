@@ -48,24 +48,24 @@ ALTER TABLE `Staff`
   ADD PRIMARY KEY (`Staff_ID`);
 
 UPDATE staff
-SET Department_ID = "010005"
-WHERE Department_ID = "1001";
+SET Department_ID = "10005"
+WHERE Department_ID = "010005";
 
 UPDATE staff
-SET Department_ID = "010011"
-WHERE Department_ID = "1002";
+SET Department_ID = "10011"
+WHERE Department_ID = "010011";
 
 UPDATE staff
-SET Department_ID = "010015"
-WHERE Department_ID = "1003";
+SET Department_ID = "10015"
+WHERE Department_ID = "010015";
 
 UPDATE staff
-SET Department_ID = "010017"
-WHERE Department_ID = "1004";
+SET Department_ID = "10017"
+WHERE Department_ID = "010017";
 
 UPDATE staff
-SET Department_ID = "010019"
-WHERE Department_ID = "010023";
+SET Department_ID = "10019"
+WHERE Department_ID = "010019";
 
 ALTER TABLE staff
 ADD FOREIGN KEY (Department_ID) REFERENCES department(departmentID);
@@ -105,4 +105,4 @@ SELECT *
 FROM login;
 
 SELECT *
-FROM staff
+FROM department
