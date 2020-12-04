@@ -1,7 +1,7 @@
-select Staff_ID, LastName, FirstName, ClientID, Last_Name, First_Name
-from client
-inner join patientinformation
-	on [client].ClientID = patient_InformationID
-inner join staff
-	on [client].StaffID = [staff].StaffID
-order by LastName;
+select s.LastName, s.FirstName, s.Staff_ID, p.Last_Name, p.First_Name, c.ClientID 
+from client c
+join patientinformation p 
+on c.ClientID = p.patient_InformationID 
+join staff s 
+on c.StaffID = s.Staff_ID 
+order by s.LastName;
