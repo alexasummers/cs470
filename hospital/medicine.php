@@ -20,7 +20,6 @@ include 'show_medicine.php';
         <a href="new_medicine.php">Create New Medicine</a>
         <a href="new_patient.php">Create New Patient</a>
         <a href="schema.html">Schema</a>
-        <a href="sitemap.html">Sitemap</a>
         <a href="logout.php">Logout</a>
     </div>
 
