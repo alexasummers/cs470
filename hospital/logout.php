@@ -1,3 +1,5 @@
+<!-- logout code from: https://www.tutorialrepublic.com/php-tutorial/php-mysql-login-system.php -->
+
 <?php
 // Initialize the session
 session_start();
