@@ -23,7 +23,7 @@ $html = "";
 while ($row = mysqli_fetch_assoc($result)) {
     // echo "number of fields ".mysqli_num_fields($result);
     $html.="Staff ID: " . $row['Staff_ID'] . "<br>";
-    $html.="Name: " . $row['FirstName'] . " " . $row['LastName'] . "<br>";
+    $html.="Name: " . $row['FirstName'] . " " .$row['LastName'] . "<br>";
     $html.="Department ID: " . $row['Department_ID'] . "<br>";
     $html.="Title: " . $row['Credentials'] . "<br>";
     $html.="<br><br>";}
