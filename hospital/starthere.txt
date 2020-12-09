@@ -1,0 +1,22 @@
+To connect using WAMP:
+
+1. Start WAMP Server
+2. Drag the Hospital file into www folder in /WAMP64
+3. Change the login credentials in connection.PHP (note: username will be root and password will be empty if using the local host)
+4. Visit localhost/hospital/login.php in your browser.
+5. Username: admin
+Password: admin
+
+Other credentials follow the same structure-- see the login table in the database for other usernames. The passwords are hashed, however, they all follow the same structure and get unhashed/salted
+when logging in.
+
+To access PHPMyAdmin using WAMP:
+1. Visit localhost in your browser.
+2. Along the bottom left hand side, you have the option to visit PHPMyAdmin.
+3. Your username is root and the password is blank.
+4. Upon logging in, updates to the DB can be seen/made.
+
+
+
+For all other DB servers:
+1. Change the login credentials in connection.PHP.
