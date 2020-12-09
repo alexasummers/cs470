@@ -17,5 +17,8 @@ call test.get_staff_information('a');
 /* queries for client name and the drug(s) prescribed */
 call test.`patient meds`();
 
+SELECT Vitals FROM client WHERE clientID = 1;
 /* update 'Vitals' column from 'client' table by passing new vitals varchar and clientID */
 call test.update_vitals('Normal', 1);
+SELECT Vitals FROM client WHERE clientID = 1;
+
